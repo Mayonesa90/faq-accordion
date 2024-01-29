@@ -11,6 +11,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: hsl(275, 100%, 97%);
+    position: static;
 
     @media only screen and (min-width: 650px) {
         background-image: url(assets/images/background-pattern-desktop.svg);
@@ -21,7 +22,25 @@ body {
     height: 100vh;
     display: grid;
     justify-content: center;
+    /* z-index: 2; */
+    align-items: center;
+
 }
+
+/* .wrapper-header {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    z-index: 1;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    
+
+    @media only screen and (min-width: 650px) {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+    }
+
+} */
 
 .header {
     display: flex;
@@ -59,8 +78,13 @@ body {
     border-radius: 15px;
     padding: 20px;
     max-width: 540px;
-    margin: 150px 15px;
+    margin: 0 15px;
     height: max-content;
+    position: absolute;
+    /* z-index: 2; */
+    top: 100px;
+    place-self: center;
+    
 
     @media only screen and (min-width: 650px) {
         width: 540px;
@@ -87,5 +111,11 @@ body {
     border: none;
     width: 30px;
     height: 30px;
+}
+
+.attribution {
+    place-self: flex-end;
+    margin-bottom: 15px;
+    justify-self: center;
 }
 
