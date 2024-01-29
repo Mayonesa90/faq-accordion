@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+
+    @media only screen and (min-width: 650px) {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+    }
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.star-logo {
+    height: 30px;
+    @media only screen and (min-width: 650px) {
+        height: 40px;
+    }
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+
+    @media only screen and (min-width: 650px) {
+        font-size: 60px;
+    }
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+    max-width: 90%;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 540px;
+    margin: 150px 15px;
+    height: max-content;
+
+    @media only screen and (min-width: 650px) {
+        width: 540px;
+    }
+}
+
+.card-header {
+    height: 50px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content {
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+    display: none;
+    line-height: 25px;
+}
+
+.card-btn {
+    background-image: url(assets/images/icon-plus.svg);
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
